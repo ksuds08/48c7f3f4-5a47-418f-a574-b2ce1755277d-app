@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Resume Terminate</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 text-gray-900">
+  <header class="bg-[#1A1A2E] p-4 flex items-center justify-between">
+    <img src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-eeM7RLe3Wv2HZ7Toub47POas/user-rnGwZEmjnwoUoF8lEvadvt0O/img-yo5geZczI9pG2PNHrFcN5s2X.png?st=2025-07-27T00%3A07%3A26Z&se=2025-07-27T02%3A07%3A26Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=cc612491-d948-4d2e-9821-2683df3719f5&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-26T17%3A32%3A02Z&ske=2025-07-27T17%3A32%3A02Z&sks=b&skv=2024-08-04&sig=/OsNT0x7mc0dOYMJGZnCeflidfLFUK/piGjxLhDIFSc%3D" alt="AI Resume Terminate Logo" class="h-12">
+    <h1 class="text-white text-xl font-semibold">AI Resume Terminate</h1>
+  </header>
+
+  <main class="max-w-4xl mx-auto p-6">
+    <section class="bg-white shadow-md rounded-lg p-8 mt-6">
+      <h2 class="text-[#0F3460] text-2xl font-bold mb-4">Streamline Your Resume, Elevate Your Career</h2>
+      <form id="resume-form" class="space-y-4">
+        <div>
+          <label for="job-title" class="block text-sm font-medium text-gray-700">Job Title</label>
+          <input type="text" id="job-title" name="jobTitle" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-[#E94560] focus:ring-[#E94560] sm:text-sm">
+        </div>
+        <div>
+          <label for="industry" class="block text-sm font-medium text-gray-700">Industry</label>
+          <input type="text" id="industry" name="industry" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-[#E94560] focus:ring-[#E94560] sm:text-sm">
+        </div>
+        <div>
+          <label for="experience-level" class="block text-sm font-medium text-gray-700">Experience Level</label>
+          <select id="experience-level" name="experienceLevel" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-[#E94560] focus:ring-[#E94560] sm:text-sm">
+            <option value="entry">Entry</option>
+            <option value="mid">Mid</option>
+            <option value="senior">Senior</option>
+          </select>
+        </div>
+        <button type="submit" class="w-full mt-4 bg-[#E94560] text-white py-2 px-4 rounded-md hover:bg-[#53354A] transition duration-300">Generate Template</button>
+      </form>
+    </section>
+
+    <section id="template-result" class="mt-8 hidden">
+      <h3 class="text-xl font-semibold text-[#0F3460] mb-4">Your Tailored Resume Template</h3>
+      <div id="template-content" class="bg-white p-6 rounded-lg shadow-md"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
